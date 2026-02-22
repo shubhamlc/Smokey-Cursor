@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none !important;
+}
+
+body {
+    overflow: hidden;
+    background: #010313;
+    background: linear-gradient(90deg, #ffffff14 1px, #03061824 1px), linear-gradient(#ffffff12 1px, transparent 1px), #010313;
+    background-size: 40px 40px;
+}
+
+/* Custom cursor circle — GPU accelerated via transform, NO transition on transform */
+#cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 22px;
+    height: 22px;
+    border: 2px solid rgba(255, 77, 77, 0.85);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    will-change: transform;
+    transition: opacity .2s ease;
+    mix-blend-mode: screen;
+}
+
+#fluid-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    pointer-events: none;
+    width: 100vw;
+    height: 100vh;
+}
+
+#fluid {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+.content {
+    position: relative;
+    z-index: 100;
+    padding: 50px;
+    color: white;
+    font-family: Arial, sans-serif;
+    pointer-events: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+.love-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.love-button {
+    background: rgba(255, 77, 77, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+    pointer-events: auto;
+}
+
+.love-button:hover {
+    transform: scale(1.1);
+    background: rgba(255, 77, 77, 1);
+}
+
+.love-button.liked {
+    background: #ff1a1a;
+}
+
+.heart-icon {
+    width: 30px;
+    height: 30px;
+    fill: white;
+    transition: transform 0.3s ease, fill 0.3s ease;
+}
+
+.love-button.liked .heart-icon {
+    transform: scale(1.2);
+    fill: #ffe6e6;
+}
+
+.love-counter {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ff4d4d;
+}
