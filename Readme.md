@@ -10,14 +10,14 @@ An interactive WebGL fluid simulation with a love button that triggers a smokey 
 
 ## ✨ Features
 
-- **Real-time fluid simulation** powered by WebGL — runs entirely on the GPU
-- **Interactive painting** — move your mouse/finger to trail colorful fluid
-- **Love button** — click the heart to trigger a smoky color burst at your cursor position
-- **Love counter** — tracks how many times you've clicked the heart
-- **Custom cursor** — the default mouse pointer is replaced with a clean red circle, GPU-accelerated with zero lag
-- **Touch support** — works on mobile and tablet devices
-- **Automatic color cycling** — colors shift over time for a rainbow fluid effect
-- **Responsive** — adapts to any screen size
+- **Real-time fluid simulation** powered by WebGL : runs entirely on the GPU
+- **Interactive painting** : move your mouse/finger to trail colorful fluid
+- **Love button** : click the heart to trigger a smoky color burst at your cursor position
+- **Love counter** : tracks how many times you've clicked the heart
+- **Custom cursor** : the default mouse pointer is replaced with a clean red circle, GPU-accelerated with zero lag
+- **Touch support** : works on mobile and tablet devices
+- **Automatic color cycling** : colors shift over time for a rainbow fluid effect
+- **Responsive** : adapts to any screen size
 
 ---
 
